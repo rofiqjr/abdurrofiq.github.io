@@ -1,0 +1,203 @@
+/* Navbar style */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+
+/* navbar logo */
+.navbar .logo img{
+  width: 5rem;
+}
+
+/* Make navbar sticky */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* Ensure navbar stays above other content */
+}
+
+/* Search form styling */
+.navbar-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden; /* Ensure rounded corners apply to both input and button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-form input {
+  border: none; /* Remove border */
+  border-radius: 30px 0 0 30px; /* Rounded corners on the left */
+  padding: 8px 15px;
+  width: auto;
+  outline: none;
+}
+
+.navbar-form button {
+  border: none; /* Remove border */
+  background-color: #fff; /* Button background color */
+  color: grey; /* Button text color */
+  border-radius: 0 30px 30px 0; /* Rounded corners on the right */
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.navbar-form button:hover {
+  background-color: #fff; /* Darker color on hover */
+}
+
+/* Main content style */
+.main-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Section title */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Horizontal scroll container */
+.horizontal-scroll-wrapper {
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Default content box style */
+.content-box {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  white-space: normal;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+/* Popular Web content box */
+.popular-web .content-box {
+  width: 200px; /* Bigger size for Popular Web */
+  margin: 15px;
+}
+
+/* Genre content box */
+.genre .content-box {
+  width: 100px; /* Smaller size for Genre */
+  margin: 15px;
+}
+
+/* Jadwal Tayang table style */
+.jadwal-tayang table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.jadwal-tayang th,
+.jadwal-tayang td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.jadwal-tayang th {
+  background-color: #343a40;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.jadwal-tayang td {
+  background-color: #ffffff;
+  color: #495057;
+}
+
+.jadwal-tayang tr:nth-child(even) td {
+  background-color: #f8f9fa;
+}
+
+.jadwal-tayang td img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.jadwal-tayang td h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.jadwal-tayang td p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Bottom Navigation */
+.navbar.fixed-bottom {
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.fixed-bottom .nav-link {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.navbar.fixed-bottom .nav-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .horizontal-scroll-wrapper {
+    padding: 10px 0;
+  }
+
+  .content-box {
+    width: 150px; /* Default width for smaller screens */
+    margin-right: 10px;
+  }
+
+  .jadwal-tayang th,
+  .jadwal-tayang td {
+    padding: 10px;
+  }
+
+  .jadwal-tayang td img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-box {
+    width: 120px; /* Default width for very small screens */
+    margin-right: 5px;
+  }
+
+  .jadwal-tayang th,
+  .jadwal-tayang td {
+    padding: 8px;
+  }
+
+  .jadwal-tayang td img {
+    width: 60px;
+  }
+}
